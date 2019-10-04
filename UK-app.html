@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://www.edreams.fr/frontend-home/static-content/versioned_0xnUWSgZjW/css/none_ed_desktop.css">
 <head>
     <style>
         @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -521,21 +521,22 @@ background-image: url(https://www.edreams.fr/content/img/OF/WebMasterPages/app/r
             }
 </script>
 <script>
-            window.onscroll = function () { myFunction() };
+        window.onscroll = function () {
+            myFunction();
+        };
 
-            var navbar = document.getElementById("nav-bar");
-            var sticky = navbar.offsetTop;
+        var navbar = document.getElementById("nav-bar");
+        var sticky = navbar.offsetTop;
 
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("fixed-top")
-                } else {
-                    navbar.classList.remove("fixed-top");
-                }
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("fixed-top");
+            } else {
+                navbar.classList.remove("fixed-top");
             }
-            $(".nav li").on("click", function () {
-                $(".nav li").removeClass("active");
-                $(this).addClass("active");
-            }
-          
+        }
+        $(".nav li").on("click", function () {
+            $(".nav li").removeClass("active");
+            $(this).addClass("active");
+        });        
 </script>
